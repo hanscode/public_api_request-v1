@@ -1,0 +1,31 @@
+.*
+/.DS_Store
+*.DS_Store
+/.ftpconfig
+/.ftpignore
+/.sftp-config.json
+!.gitignore
+!wp-content/plugins/jetpack/.svnignore
+/wp-cli.yml
+conf/*
+nginx.conf
+robots.txt
+cloner_error_log
+
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite
+
+# ignore all files that start with ~
+~*
+
+# ignore packaged files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
