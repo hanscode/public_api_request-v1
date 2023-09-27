@@ -16,7 +16,7 @@ html, body {
 body {
     font-family: "Nunito", sans-serif;
     text-align: center;
-    background: rgba(235, 235, 235, 0.9);
+    background: #e7f0f6;
 }
 
 header {
@@ -90,6 +90,7 @@ header h1 {
     border: 1px solid rgba(50, 50, 50, 0.3);
     transition: .4s ease-out;
     overflow: hidden;
+    box-shadow: rgba(11,43,158,0.15) 0px 6px 20px -6px;
 }
 
 .card-img {

@@ -47,7 +47,7 @@ function getEmployees(data) {
         // Creating the elements needed to display the employee information.
         const card = document.createElement('div');
         card.className = 'card';
-        card.setAttribute('id', index);
+        card.setAttribute('id', index); // Adds the index element value as identifier for each card.
         gallery.appendChild(card);
 
         // insert the above cards elements
@@ -96,7 +96,7 @@ function createModal(employee, data, index) {
             <button type="button" id="modal-next" class="modal-next btn">Next</button>
         </div>
     `);
-    // Appends the modal HTML after the gallery div element.
+    // Appends the modal HTML after the gallery div element and before the `<script>` tag.
     body.insertBefore(modal, gallery.nextSibling);
 
     // Show/Hide next and prev buttons according to the index value.
@@ -173,7 +173,7 @@ const filterEmployees = (e) => {
             employee.parentNode.parentNode.style.display = 'none';
         }
     });
-    // If no matches are found for an employee search, display a “No results found” type message on the page.
+    // If no matches are found for an employee search, display a “No results found” text message on the page.
     if (results.length === 0) {
         addText = 'no results found';
         h1.textContent = addText.toUpperCase();
